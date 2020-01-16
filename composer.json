@@ -1,0 +1,25 @@
+{
+    "name": "fredyns/nested-numbering",
+    "description": "Create nested numbering",
+    "type": "php-library",
+    "keywords": [
+        "nested numbering",
+        "library",
+        "php"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fredy Nurman Saleh",
+            "email": "email@fredyns.net"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "fredyns\\nestednumbering\\": ""
+        }
+    }
+}
