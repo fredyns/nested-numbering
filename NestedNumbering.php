@@ -114,7 +114,7 @@ class NestedNumbering
         foreach (static::$counter as $counter_level => $counter_value) {
             if ($counter_level < $level) { // upper counter
                 if ($counter_value == 0) { // not properly initiated (bug prevention)
-                    static::$counter = 1; // ensure upper numbering
+                    static::$counter[$counter_level] = 1; // ensure upper numbering
                 }
             } elseif ($counter_level == $level) { // target counter
                 $new_number = ++static::$counter[$counter_level]; // this is new number generated
